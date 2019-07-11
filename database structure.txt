@@ -1,0 +1,35 @@
+mysql> show columns from comments;
++---------+---------------------+------+-----+---------+----------------+
+| Field   | Type                | Null | Key | Default | Extra          |
++---------+---------------------+------+-----+---------+----------------+
+| id      | tinyint(3) unsigned | NO   | PRI | NULL    | auto_increment |
+| news_id | tinyint(3) unsigned | NO   | MUL | NULL    |                |
+| comment | text                | NO   |     | NULL    |                |
+| user_id | tinyint(3) unsigned | NO   | MUL | NULL    |                |
++---------+---------------------+------+-----+---------+----------------+
+4 rows in set (0.00 sec)
+
+mysql> show columns from news;
++-----------+---------------------+------+-----+---------+----------------+
+| Field     | Type                | Null | Key | Default | Extra          |
++-----------+---------------------+------+-----+---------+----------------+
+| id        | tinyint(3) unsigned | NO   | PRI | NULL    | auto_increment |
+| news      | text                | NO   |     | NULL    |                |
+| title     | varchar(40)         | NO   |     | NULL    |                |
+| date      | date                | YES  |     | NULL    |                |
+| author_id | tinyint(3) unsigned | YES  | MUL | NULL    |                |
++-----------+---------------------+------+-----+---------+----------------+
+5 rows in set (0.00 sec)
+
+mysql> show columns from users;
++-----------------+---------------------+------+-----+---------+----------------+
+| Field           | Type                | Null | Key | Default | Extra          |
++-----------------+---------------------+------+-----+---------+----------------+
+| id              | tinyint(3) unsigned | NO   | PRI | NULL    | auto_increment |
+| username        | varchar(20)         | NO   |     | NULL    |                |
+| hashed_password | varchar(150)        | NO   |     | NULL    |                |
++-----------------+---------------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+valid username and password:
+user 123
