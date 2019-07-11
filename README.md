@@ -1,15 +1,16 @@
-Module 3 Group Project
+# Module 3 Group Project
+A news article website. An assignment of Rapid Prototype Development (CSE 330) at Washington University in St. Louis. 
 
-Shiyi Liu - 467367
-Joseph Li - 466646
+### Link to website
+http://ec2-13-59-157-98.us-east-2.compute.amazonaws.com/~tina.liu/module3/login.php
 
-http://ec2-3-17-24-144.us-east-2.compute.amazonaws.com/~tina.liu/module3/login.php
+### Feature
+- News articles are listed on the website. 
+- Users can sign up, log in, log out and browse as a guest. 
+- Signed-in users can leave comments to news articles and edit or delete their comments. 
+- Users can filter articles using key words.
+- Users can sort articles by date or article ID. 
 
-Creative portion:
-We implemented a search bar feature that looks for keywords in the values in the database. We also created a sorting feature that can sort the news depending on the field.
-
-Login:
-You can create your own account, or use the default.
-
+### Login Example
 Username: user
 Password: 123
